@@ -3,7 +3,7 @@ import express from 'express';
 const app = express();
 
 app.get("/", (req, res)=>{
-    res.send("Olá mundo!")
+    res.send("Get funcionando!")
 })
 
 app.post("/insertTemp", (req, res)=>{
