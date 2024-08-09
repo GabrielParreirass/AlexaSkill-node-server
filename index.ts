@@ -7,7 +7,7 @@ const db = mongoose.connection;
 const db_url: any = process.env.DB_URL;
 
 mongoose.connect(
-  "mongodb+srv://gepeto:Alimento@cluster0.kg0uz.mongodb.net/Temperaturas"
+  "mongodb+srv://vercelUser:senhavercel@cluster0.kg0uz.mongodb.net/Temperaturas"
 );
 
 const TemperaturaSchema = new mongoose.Schema({
