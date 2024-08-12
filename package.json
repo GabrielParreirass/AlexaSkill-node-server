@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.ts"
+    "dev": "tsx index.ts",
+    "build":"tsup index.ts"
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +18,8 @@
     "mongoose": "^8.5.2",
     "nodemon": "^3.1.4",
     "ts-node": "^10.9.2",
+    "tsup": "^8.2.4",
+    "tsx": "^4.17.0",
     "typescript": "^5.5.4"
   },
   "devDependencies": {

@@ -42,6 +42,6 @@ app.post("/insertTemp", async (req, res) => {
     }
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT ? Number(process.env.PORT) : 3000,  () => {
   console.log("Servidor rodando na porta 3000");
 });
