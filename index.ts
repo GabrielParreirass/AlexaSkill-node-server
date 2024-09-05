@@ -1,13 +1,15 @@
 import express from "express";
 import mongoose from "mongoose";
+import dotenv from 'dotenv'; 
 
+dotenv.config();
 const app = express();
 const db = mongoose.connection;
 
 const db_url: any = process.env.DB_URL;
 
 mongoose.connect(
-  "mongodb+srv://vercelUser:senhavercel@cluster0.kg0uz.mongodb.net/Temperaturas"
+  db_url
 );
 
 const TemperaturaSchema = new mongoose.Schema({
