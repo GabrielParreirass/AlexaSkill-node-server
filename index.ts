@@ -29,6 +29,14 @@ app.get("/", (req, res) => {
   res.send("Get funcionando!");
 });
 
+app.get("/getTemp", async (req,res)=>{
+
+  const temp = await Temperatura.find().sort({_id:-1}).limit(1)
+
+  res.send(temp)
+
+})
+
 app.post("/insertTemp", async (req, res) => {
   //res.send("Post funcionando!");
   const temp = req.body.temperatura;
